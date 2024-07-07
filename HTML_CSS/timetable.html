@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Time Table</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right, #e0eafc, #cfdef3);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #343a40;
+            margin-top: 20px;
+            font-size: 2.5em;
+            letter-spacing: 1px;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 2px solid #dee2e6;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            border: 1px solid #dee2e6;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #343a40;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        td {
+            transition: background-color 0.3s ease;
+        }
+
+        td:hover {
+            background-color: #f1f1f1;
+        }
+
+        .highlight {
+            background-color: #ffdd57;
+            font-weight: bold;
+        }
+
+        .lunch {
+            background-color: #17a2b8;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .lab {
+            background-color: #ff9f43;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            table,
+            th,
+            td {
+                font-size: 0.8em;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+        }
+
+        @media (max-width: 480px) {
+            table,
+            th,
+            td {
+                font-size: 0.7em;
+                padding: 8px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>TIME TABLE</h1>
+    <table>
+        <tr>
+            <th>Day/Period</th>
+            <th>I<br>9:30-10:20</th>
+            <th>II<br>10:20-11:10</th>
+            <th>III<br>11:10-12:00</th>
+            <th>12:00-12:40</th>
+            <th>IV<br>12:40-1:30</th>
+            <th>V<br>1:30-2:20</th>
+            <th>VI<br>2:20-3:10</th>
+            <th>VII<br>3:10-4:00</th>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Monday</b></td>
+            <td>C++</td>
+            <td>Java</td>
+            <td>C</td>
+            <td rowspan="6" class="lunch"><b>LUNCH</b></td>
+            <td colspan="3" class="lab">LAB</td>
+            <td>OS</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Tuesday</b></td>
+            <td colspan="3" class="lab">LAB</td>
+            <td>C++</td>
+            <td>Database</td>
+            <td>IoT</td>
+            <td class="lab">SPORTS</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Wednesday</b></td>
+            <td>Java</td>
+            <td>OS</td>
+            <td>C++</td>
+            <td>Database</td>
+            <td colspan="3">LIBRARY</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Thursday</b></td>
+            <td>IoT</td>
+            <td>C++</td>
+            <td>Database</td>
+            <td colspan="3" class="lab">LAB</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Friday</b></td>
+            <td colspan="3" class="lab">LAB</td>
+            <td>Java</td>
+            <td>Database</td>
+            <td>C++</td>
+            <td>OS</td>
+        </tr>
+        <tr>
+            <td class="highlight"><b>Saturday</b></td>
+            <td>C++</td>
+            <td>Database</td>
+            <td>Java</td>
+            <td colspan="3">SEMINAR</td>
+            <td class="lab">SPORTS</td>
+        </tr>
+    </table>
+</body>
+
+</html>
